@@ -73,7 +73,7 @@ class SwinIR_SR:
         return model
 
     def _load_model(self):
-        os.makedirs(WEIGHTS_FOLDER, exist_ok=True)
+        # os.makedirs(WEIGHTS_FOLDER, exist_ok=True)
         pretrained_weights = self._load_pretrained_weights()
 
         model = self._load_raw_model()
